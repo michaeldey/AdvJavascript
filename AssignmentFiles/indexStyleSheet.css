@@ -1,0 +1,71 @@
+/* 
+    Created on : Sep 3, 2015, 11:21:22 PM
+    Author     : Michael Dey
+    CSIS 2440-002 MW 5:30pm - 6:50pm
+*/
+
+body
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    color: #222222;
+    background-color: #D2D6DD;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+a:link
+{
+    color: #14b4ed;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #0a5a76;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:active
+{
+    font-size: .95em;
+}
+
+p
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+p.topRow
+{
+    text-align: center;
+}
+
+p.base
+{
+    text-align: center;
+    font-family: Palatino Linotype;
+    color: #848484;
+    font-size: 1em;
+    padding-top: 20px;
+}
+
+h3.header
+{
+    text-decoration: none;
+    font-family: Palatino Linotype;
+    color: #848484;
+
+}
+
+ul.demo
+{
+	margin-left: 150px;
+}

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<!--
+Michael Dey
+CSIS 2470-002 Advanced Javascript
+Assignment: JSON/JavaScript Complex Self
+
+
+This will make an object with these data objects in it
+Name(string)
+Age(int)
+Married(boolean)
+Classes(Array of class numbers)
+Hobbies(Objects with values "hobbyname": "short description")
+This web site will display all the information that will tell the user your name, 
+then age, if you are married, then you will list your favorite class, and one 
+hobby with a description.
+
+-->
+<html>
+    <head>
+        <title>JSON Complex Self</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                font-size: 1em;
+                color: #222222;
+                background-color: #D2D6DD;
+                margin-left: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!--Add a link header back to the home page-->
+        <a href = "index.html">
+            <img src = "MikeLogo3.png" width = "150px">
+        </a><br><br>
+        <p id ="demo"></p>
+
+        <script>
+            var meObject = {
+                "Name":"Mike",
+                "Age":36,
+                "Married":true,
+                "Classes":[2420, 2470],
+                "Hobbies":{
+                    "Exercise":"Lifting Weights",
+                    "Astronomy":"I have a telescope that I like to take out and use.",
+                    "VideoGames":"World of Warcraft"
+                }
+            }
+            
+          document.getElementById("demo").innerHTML =
+                   "Name: " + meObject.Name + "<br>" +
+                   "Age: " + meObject.Age + "<br>" +
+                   "Married: " + meObject.Married + "<br>"+
+                   "My Favorite CSIS Classes:&nbsp" + meObject.Classes[0] + "&nbsp"+ 
+                        meObject.Classes[1] + "<br>" +
+                   "My Hobby:&nbsp"+ meObject.Hobbies.Astronomy;
+                   
+        </script>
+    </body>
+</html>
